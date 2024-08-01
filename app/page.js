@@ -1,4 +1,4 @@
-'use client';
+
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
