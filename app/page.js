@@ -1,12 +1,12 @@
-'use client';
-import { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
-import './globals.css';
-import { signInWithGoogle, logout } from '../firebaseConfig';
-import confetti from 'canvas-confetti';
+"use client";
+import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import "./globals.css";
+import { signInWithGoogle, logout } from "../firebaseConfig";
+import confetti from "canvas-confetti";
 
 export default function Home() {
   const [isJoined, setIsJoined] = useState(false);
@@ -45,11 +45,11 @@ export default function Home() {
       <nav className="border-b-4 h-fit text-center">
         <div className="flex justify-between h-full px-10 py-5 sm:px-20">
           <div className="flex items-center">
-            <Image src={'/applelogo.png'} alt="logo" width="50" height="50" />
+            <Image src={"/applelogo.png"} alt="logo" width="50" height="50" />
             <h1 className="text-2xl font-bold ml-2">Apple</h1>
           </div>
           <div className="flex items-center flex-col sm:flex-row">
-            <a href='#team' smooth={true} duration={500} className="mr-4">Team</a>
+            <a href="#team" smooth={true} duration={500} className="mr-4">Team</a>
             <a href="/register" className="mr-4">Contact</a>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Home() {
         <div>
           <div className="flex justify-center items-center h-96 flex-col my-4">
             <div className="text-center p-4">
-              <h1 className="text-3xl p-1 lg:text-5xl">Wanna <span className='font-bold'>Collaborate</span> with devs around the world?</h1>
+              <h1 className="text-3xl p-1 lg:text-5xl">Wanna <span className="font-bold">Collaborate</span> with devs around the world?</h1>
               <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don&#39;t let distance be a problem.</p>
             </div>
             <div className="flex justify-center items-center my-5">
@@ -66,7 +66,7 @@ export default function Home() {
                 onClick={isJoined ? handleLogout : handleSignIn} 
                 className="py-2 px-3 border-2 border-black rounded-lg hover:bg-black hover:text-white"
               >
-                {isJoined ? 'Joined' : 'Join us'}
+                {isJoined ? "Joined" : "Join us"}
               </button>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <div>
           <div className="flex justify-center items-center w-full h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5">
             <div className="text-center p-4">
-              <h1 className="text-3xl p-1 lg:text-5xl text-wrap font-bold w-96">Collaborate and track your team's progress</h1>
+              <h1 className="text-3xl p-1 lg:text-5xl text-wrap font-bold w-96">Collaborate and track your team"s progress</h1>
             </div>
             <div className="flex justify-evenly items-center my-5 flex-col h-60">
             <div className="border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container" data-filled="true">
@@ -130,7 +130,7 @@ export default function Home() {
             Created by Person 1
           </div>
           <p className="text-gray-800 text-md mt-4">Collaborate with a global team to bring groundbreaking ideas to life and make a significant impact in your field.</p>
-          <div className='flex flex-col'>
+          <div className="flex flex-col">
           <div className="mt-4 flex space-x-2">
             <div className="bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm">HTML</div>
             <div className="bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm">CSS</div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="flex justify-end items-center absolute top-[calc(81%)] right-2 z-50 mt-2">
               <FontAwesomeIcon 
                 icon={faArrowPointer} 
-                style={{ color: "#656565", fontSize: '50px' }} 
+                style={{ color: "#656565", fontSize: "50px" }} 
                 className="animate-click"
               />
             </div>
@@ -167,14 +167,14 @@ export default function Home() {
               <div className="w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5">
                 <div className="flex gap-6 flex-col md:flex-row">
                   <div className="border-2 border-black h-max w-40 fade-in delay-1">
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={"/sampleimg.png"} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">Akshat</h2>
                       <p>CEO</p>
                     </div>
                   </div>
                   <div className="border-2 border-black h-max w-40 fade-in delay-2">
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={"/sampleimg.png"} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">Yashvi</h2>
                       <p>CEO</p>
@@ -183,14 +183,14 @@ export default function Home() {
                 </div>
                 <div className="flex gap-6 flex-col md:flex-row">
                   <div className="border-2 border-black h-max w-40 fade-in delay-3">
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={"/sampleimg.png"} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">Vikrant</h2>
                       <p>CEO</p>
                     </div>
                   </div>
                   <div className="border-2 border-black h-max w-40 fade-in delay-4">
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={"/sampleimg.png"} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">Rishi</h2>
                       <p>CEO</p>
