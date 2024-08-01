@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex justify-center items-center h-96 flex-col my-4">
             <div className="text-center p-4">
               <h1 className="text-3xl p-1 lg:text-5xl">Wanna build something with someone overseas?</h1>
-              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don't let distance be a problem.</p>
+              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don&#39;t let distance be a problem.</p>
             </div>
             <div className="flex justify-center items-center my-5 flex-col md:flex-row">
               <input type="email" placeholder="Enter your email" className="mx-1 py-2 px-3 border-2 border-black rounded-lg"/>
