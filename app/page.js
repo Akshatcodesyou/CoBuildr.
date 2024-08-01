@@ -151,7 +151,7 @@ export default function Home() {
         </div>
         {/* Content on the Right */}
         <div className='flex-1 flex flex-col justify-center items-center text-center md:text-right p-4'>
-          <h1 className='text-3xl p-6 lg:text-5xl text-wrap text-center font-bold w-full md:w-96'>Explore New Projects and Join the desired one</h1>
+          <h1 className='text-3xl p-6 lg:text-5xl text-wrap text-center font-bold w-full md:w-96'>Explore New Projects and join the desired one</h1>
         </div>
       </div>
     </div>
