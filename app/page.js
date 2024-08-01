@@ -5,14 +5,24 @@ import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import './globals.css';
 import { signInWithGoogle, logout } from '../firebaseConfig';
+import confetti from 'canvas-confetti';
 
 export default function Home() {
   const [isJoined, setIsJoined] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [visibleTeamMembers, setVisibleTeamMembers] = useState([]);
 
   const handleSignIn = async () => {
     try {
       await signInWithGoogle();
       setIsJoined(true);
+      setShowThankYou(true);
+      // Trigger confetti animation
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
     } catch (error) {
       console.error("Error signing in with Google:", error);
     }
@@ -26,7 +36,9 @@ export default function Home() {
       console.error("Error signing out:", error);
     }
   };
-
+  const handleCloseThankYou = () => {
+    setShowThankYou(false);
+  };
   return (
     <div className="h-screen scrollbar scrollbar-thumb-stone-900">
       <nav className="border-b-4 h-fit text-center">
@@ -45,8 +57,8 @@ export default function Home() {
         <div>
           <div className="flex justify-center items-center h-96 flex-col my-4">
             <div className="text-center p-4">
-              <h1 className="text-3xl p-1 lg:text-5xl">Wanna build something with someone overseas?</h1>
-              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don&#39;t let distance be a problem.</p>
+              <h1 className="text-3xl p-1 lg:text-5xl">Unleash Creativity with Global Collaborators</h1>
+              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Join Forces and Turn Ideas into Reality</p>
             </div>
             <div className="flex justify-center items-center my-5">
               <button 
@@ -58,6 +70,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Thank You Box */}
+        {showThankYou && (
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white p-6 rounded-lg shadow-lg z-50">
+            <h2 className="text-3xl text-center font-bold">THANK YOU</h2>
+            <p className="mt-2 text-center">We appreciate your interest! Get ready to embark on a journey of collaboration and innovation with us.</p>
+            <button 
+              onClick={handleCloseThankYou} 
+              className="absolute top-2 right-2 text-white text-xl"
+            >
+              &times;
+            </button>
+          </div>
+        )}
         <div>
           <div className="flex justify-center items-center w-full h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5">
             <div className="text-center p-4">
@@ -138,33 +163,33 @@ export default function Home() {
               <h1 className="text-4xl font-bold p-1 lg:text-6xl">Meet the team</h1>
               <div className="w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5">
                 <div className="flex gap-6 flex-col md:flex-row">
-                  <div className="border-2 border-black h-max w-40">
+                  <div className="border-2 border-black h-max w-40 fade-in delay-1">
                     <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
-                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <h2 className="text-2xl font-bold text-start">Akshat</h2>
                       <p>CEO</p>
                     </div>
                   </div>
-                  <div className="border-2 border-black h-max w-40">
+                  <div className="border-2 border-black h-max w-40 fade-in delay-2">
                     <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
-                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <h2 className="text-2xl font-bold text-start">Yashvi</h2>
                       <p>CEO</p>
                     </div>
                   </div>
                 </div>
                 <div className="flex gap-6 flex-col md:flex-row">
-                  <div className="border-2 border-black h-max w-40">
+                  <div className="border-2 border-black h-max w-40 fade-in delay-3">
                     <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
-                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <h2 className="text-2xl font-bold text-start">Vikrant</h2>
                       <p>CEO</p>
                     </div>
                   </div>
-                  <div className="border-2 border-black h-max w-40">
+                  <div className="border-2 border-black h-max w-40 fade-in delay-4">
                     <Image src={'/sampleimg.png'} width={50} height={50} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
-                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <h2 className="text-2xl font-bold text-start">Rishi</h2>
                       <p>CEO</p>
                     </div>
                   </div>

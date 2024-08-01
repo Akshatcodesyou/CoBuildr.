@@ -99,6 +99,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --red:50%;
   }
 
   .dark {
@@ -151,7 +152,7 @@
 /* Apply the animation to the progress bars */
 .progress-bar {
   transition: width 1s ease-in-out;
-  animation: fillUp 1s forwards;
+  animation: fillUp 6s forwards infinite;
 }
 
 .progress-bar-container {
@@ -175,6 +176,7 @@
 .progress-bar-container[data-filled="true"] .progress-bar-content.red {
   background-color: red;
 }
+
 
 .progress-bar-container[data-filled="true"] .progress-bar-content.blue {
   background-color: blue;
@@ -204,4 +206,41 @@
 
 .animate-click {
   animation: clickAnimation 0.7s ease infinite;
+}
+/* Add these styles to your globals.css or relevant CSS file */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+.delay-4 {
+  animation-delay: 4s;
+}
+
+.delay-5 {
+  animation-delay: 10s;
 }
