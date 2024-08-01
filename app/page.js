@@ -1,113 +1,121 @@
 import Image from "next/image";
+import './globals.css';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+   return (
+    <body className="h-screen scrollbar scrollbar-thumb-stone-900">
+      <nav className="border-b-4 h-fit text-center">
+        <div className="flex justify-between h-full px-10 py-5 sm:px-20">
+          <div className="flex items-center">
+            <Image src={'/applelogo.png'} alt="logo" width="50" height="50" />
+            <h1 className="text-2xl font-bold ml-2">Apple</h1>
+          </div>
+          <div className="flex items-center flex-col sm:flex-row">
+            <a href="/login" className="mr-4">Login</a>
+            <a href="/register" className="mr-4">Register</a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+      </nav>
+      <main className="flex-1 overflow-auto">
+        <div>
+          <div className="flex justify-center items-center h-96 flex-col my-4">
+            <div className="text-center p-4">
+              <h1 className="text-3xl p-1 lg:text-5xl">Wanna build something with someone overseas?</h1>
+              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don't let distance be a problem.</p>
+            </div>
+            <div className="flex justify-center items-center my-5 flex-col md:flex-row">
+              <input type="email" placeholder="Enter your email" className="mx-1 py-2 px-3 border-2 border-black rounded-lg"/>
+              <button className="mx-1 py-2 px-3 border-2 border-black rounded-lg hover:bg-black hover:text-white mt-2 md:mt-0">Join us</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex justify-center items-center w-full h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5">
+            <div className="text-center p-4">
+              <h1 className="text-3xl p-1 lg:text-5xl text-wrap font-bold w-96">Collaborate and track your teams progress</h1>
+            </div>
+            <div className="flex justify-evenly items-center my-5 flex-col h-60">
+              <div className="border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between">
+                <div className="bg-red-600 h-9 w-9 rounded-full">
+                </div>
+              <div className="h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2">
+              <div className="h-full w-[80%] bg-red-400 rounded-full">
+              </div>
+              </div>
+              </div>
+              <div className="border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between">
+                <div className="bg-blue-600 h-9 w-9 rounded-full">
+                </div>
+              <div className="h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2">
+              <div className="h-full w-[65%] bg-blue-400 rounded-full">
+              </div>
+              </div>
+              </div>
+              <div className="border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between">
+                <div className="bg-green-600 h-9 w-9 rounded-full">
+                </div>
+              <div className="h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2">
+              <div className="h-full w-[56%] bg-green-400 rounded-full">
+              </div>
+              </div>
+              </div>
+              <div className="border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between">
+                <div className="bg-violet-600 h-9 w-9 rounded-full">
+                </div>
+              <div className="h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2">
+              <div className="h-full w-[80%] bg-violet-400 rounded-full">
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          {/* <div className="flex justify-center items-center h-fit bg-[#F8F9FA]"> */}
+          <div className="flex justify-center items-center w-full h-max bg-[#ffffff] text-white flex-col md:flex-row py-0 md:py-10 px-5">
+            <div className="text-center p-4 flex flex-col w-full text-black my-10">
+              <h1 className="text-4xl font-bold p-1 lg:text-6xl ">Meet the team</h1>
+              <div className="w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5">
+                <div className="flex gap-6 flex-col md:flex-row">
+              <div className="border-2 border-black h-max w-40">
+                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <div className="p-2">
+                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                  <div className="border-2 border-black h-max w-40">
+                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <div className="p-2">
+                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div className="flex gap-6 flex-col md:flex-row">
+                  <div className="border-2 border-black h-max w-40">
+                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <div className="p-2">
+                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                  <div className="border-2 border-black h-max w-40">
+                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <div className="p-2">
+                      <h2 className="text-2xl font-bold text-start">John Doe</h2>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center my-5">
+              
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+   );
 }
