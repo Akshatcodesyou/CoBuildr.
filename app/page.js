@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
@@ -40,7 +41,7 @@ export default function Home() {
     setShowThankYou(false);
   };
   return (
-    <div className="h-screen scrollbar scrollbar-thumb-stone-900">
+    <div className="h-screen">
       <nav className="border-b-4 h-fit text-center">
         <div className="flex justify-between h-full px-10 py-5 sm:px-20">
           <div className="flex items-center">
@@ -48,8 +49,8 @@ export default function Home() {
             <h1 className="text-2xl font-bold ml-2">Apple</h1>
           </div>
           <div className="flex items-center flex-col sm:flex-row">
-            <a href="/login" className="mr-4">Login</a>
-            <a href="/register" className="mr-4">Register</a>
+            <a href='#team' smooth={true} duration={500} className="mr-4">Team</a>
+            <a href="/register" className="mr-4">Contact</a>
           </div>
         </div>
       </nav>
@@ -57,8 +58,8 @@ export default function Home() {
         <div>
           <div className="flex justify-center items-center h-96 flex-col my-4">
             <div className="text-center p-4">
-              <h1 className="text-3xl p-1 lg:text-5xl">Unleash Creativity with Global Collaborators</h1>
-              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Join Forces and Turn Ideas into Reality</p>
+              <h1 className="text-3xl p-1 lg:text-5xl">Wanna <span className='font-bold'>Collaborate</span> with devs around the world?</h1>
+              <p className="text-4xl font-bold text-wrap p-1 lg:text-6xl">Don&#39;t let distance be a problem.</p>
             </div>
             <div className="flex justify-center items-center my-5">
               <button 
@@ -118,17 +119,18 @@ export default function Home() {
         </div>
         <div>
         <div className="flex justify-center items-center w-full h-max bg-[#41ab4a] text-white py-0 md:py-10 px-5">
-  <div className="flex w-full max-w-6xl mx-auto">
+  <div className="flex w-full max-w-6xl mx-auto m-10">
     {/* Content Container */}
     <div className="flex w-full justify-center items-center">
       <div className="flex flex-col md:flex-row items-center space-x-5">
         {/* White Box on the Left */}
-        <div className="w-[400px] h-[250px] bg-white p-6 rounded-lg shadow-lg flex flex-col relative">
+        <div className="w-full h-fit bg-white p-6 rounded-lg shadow-lg flex flex-col relative sm:w-96">
           <h2 className="text-gray-900 text-4xl font-bold absolute top-5 left-5">Project Title</h2>
           <div className="mt-9 pt-2 text-gray-600 text-sm">
             Created by Person 1
           </div>
           <p className="text-gray-800 text-md mt-4">Collaborate with a global team to bring groundbreaking ideas to life and make a significant impact in your field.</p>
+          <div className='flex flex-col'>
           <div className="mt-4 flex space-x-2">
             <div className="bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm">HTML</div>
             <div className="bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm">CSS</div>
@@ -145,6 +147,7 @@ export default function Home() {
                 className="animate-click"
               />
             </div>
+            </div>
         </div>
         {/* Content on the Right */}
         <div className="flex-1 flex flex-col justify-center items-center text-center md:text-right p-4">
@@ -158,7 +161,7 @@ export default function Home() {
 
 
 
-          <div className="flex justify-center items-center w-full h-max bg-[#ffffff] text-white flex-col md:flex-row py-0 md:py-10 px-5">
+          <div id="team" className="flex justify-center items-center w-full h-max bg-[#ffffff] text-white flex-col md:flex-row py-0 md:py-10 px-5">
             <div className="text-center p-4 flex flex-col w-full text-black my-10">
               <h1 className="text-4xl font-bold p-1 lg:text-6xl">Meet the team</h1>
               <div className="w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5">

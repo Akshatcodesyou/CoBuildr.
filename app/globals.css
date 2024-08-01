@@ -82,7 +82,8 @@
 /* Apply the animation to the progress bars */
 .progress-bar {
   transition: width 1s ease-in-out;
-  animation: fillUp 6s forwards infinite;
+  animation: fillUp 6s forwards;
+  animation-delay: 10s;
 }
 
 .progress-bar-container {
@@ -174,4 +175,7 @@
 
 .delay-5 {
   animation-delay: 10s;
+}
+html {
+  scroll-behavior: smooth;
 }
