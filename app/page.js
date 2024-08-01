@@ -3,7 +3,7 @@ import './globals.css';
 
 export default function Home() {
    return (
-    <body className="h-screen scrollbar scrollbar-thumb-stone-900">
+    <div className="h-screen scrollbar scrollbar-thumb-stone-900">
       <nav className="border-b-4 h-fit text-center">
         <div className="flex justify-between h-full px-10 py-5 sm:px-20">
           <div className="flex items-center">
@@ -116,6 +116,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </body>
+    </div>
    );
 }
