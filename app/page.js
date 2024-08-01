@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import './globals.css';
 
 export default function Home() {
@@ -78,14 +78,14 @@ export default function Home() {
               <div className="w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5">
                 <div className="flex gap-6 flex-col md:flex-row">
               <div className="border-2 border-black h-max w-40">
-                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">John Doe</h2>
                       <p>CEO</p>
                     </div>
                   </div>
                   <div className="border-2 border-black h-max w-40">
-                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">John Doe</h2>
                       <p>CEO</p>
@@ -94,14 +94,14 @@ export default function Home() {
                   </div>
                   <div className="flex gap-6 flex-col md:flex-row">
                   <div className="border-2 border-black h-max w-40">
-                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">John Doe</h2>
                       <p>CEO</p>
                     </div>
                   </div>
                   <div className="border-2 border-black h-max w-40">
-                    <img src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
+                    <Image src={'/sampleimg.png'} alt="team1" className="w-max h-max rounded-full"/>
                     <div className="p-2">
                       <h2 className="text-2xl font-bold text-start">John Doe</h2>
                       <p>CEO</p>
