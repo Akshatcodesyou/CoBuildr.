@@ -69,7 +69,6 @@
 }
 /* globals.css */
 
-/* Define the keyframes for the fill animation */
 @keyframes fillUp {
   from {
     width: 0;
@@ -81,33 +80,32 @@
 
 /* Apply the animation to the progress bars */
 .progress-bar {
-  transition: width 1s ease-in-out;
   animation: fillUp 6s forwards;
-  animation-delay: 10s;
+  animation-delay: 10s; /* Add delay before animation starts */
 }
 
 .progress-bar-container {
   position: relative;
+  background-color: #fff; /* Optional: Add a background color to show the empty state */
+  border-radius: 9999px;
+  overflow: hidden; /* Ensure the content doesn't overflow */
 }
 
 .progress-bar-content {
   height: 100%;
+  width: 0; /* Start with width 0 */
   border-radius: 9999px; /* Full rounding for circular effect */
 }
 
 /* Make sure to use CSS variables to control the width */
-.progress-bar-content {
-  --target-width: 0%; /* Default to 0% */
-}
-
 .progress-bar-container[data-filled="true"] .progress-bar-content {
   --target-width: 80%; /* Adjust this to match the percentage of the progress */
 }
 
 .progress-bar-container[data-filled="true"] .progress-bar-content.red {
   background-color: red;
+  --target-width: 80%;
 }
-
 
 .progress-bar-container[data-filled="true"] .progress-bar-content.blue {
   background-color: blue;
@@ -121,19 +119,7 @@
 
 .progress-bar-container[data-filled="true"] .progress-bar-content.violet {
   background-color: rgb(188, 130, 238);
-  --target-width:30%;
-}
-
-@keyframes clickAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
+  --target-width: 30%;
 }
 
 .animate-click {

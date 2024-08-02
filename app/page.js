@@ -45,8 +45,8 @@ export default function Home() {
       <nav className='border-b-4 h-fit text-center'>
         <div className='flex justify-between h-full px-10 py-5 sm:px-20'>
           <div className='flex items-center'>
-            <Image src={'/applelogo.png'} alt='logo' width='50' height='50' />
-            <h1 className='text-2xl font-bold ml-2'>Apple</h1>
+            {/* <Image src={'/applelogo.png'} alt='logo' width='50' height='50' /> */}
+            <h1 className='text-2xl font-bold ml-2'><span className='text-red-600'>Co</span><span>Buildr.</span></h1>
           </div>
           <div className='flex items-center flex-col sm:flex-row'>
             <a href='#team' smooth={true} duration={500} className='mr-4'>Team</a>
@@ -87,7 +87,7 @@ export default function Home() {
         <div>
           <div className='flex justify-center items-center w-full h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5'>
             <div className='text-center p-4'>
-              <h1 className='text-3xl p-1 lg:text-5xl text-wrap font-bold w-96'>Collaborate and track your team's progress</h1>
+              <h1 className='text-3xl p-1 lg:text-5xl text-wrap font-bold w-fit'>Collaborate and track your team's progress</h1>
             </div>
             <div className='flex justify-evenly items-center my-5 flex-col h-60'>
             <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
