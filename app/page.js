@@ -86,8 +86,8 @@ export default function Home() {
         )}
         <div>
           <div className='flex justify-center items-center w-full h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5'>
-            <div className='text-center p-4'>
-              <h1 className='text-3xl p-1 lg:text-5xl text-wrap font-bold w-fit'>Collaborate and track your team's progress</h1>
+            <div className='text-center p-4 flex flex-col justify-center items-center md:text-right'>
+              <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold w-full'>Collaborate and track your team's progress</h1>
             </div>
             <div className='flex justify-evenly items-center my-5 flex-col h-60'>
             <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
         {/* Content on the Right */}
         <div className='flex-1 flex flex-col justify-center items-center text-center md:text-right p-4'>
-          <h1 className='text-3xl p-6 lg:text-5xl text-wrap text-center font-bold w-full md:w-96'>Explore New Projects and join the desired one</h1>
+          <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold w-full'>Explore New Projects and join the desired one</h1>
         </div>
       </div>
     </div>
@@ -199,7 +199,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='flex justify-center items-center my-5'>
+            <div className='flex jusfuly-center items-center my-5'>
               {/* Additional content or elements can be added here */}
             </div>
           </div>
