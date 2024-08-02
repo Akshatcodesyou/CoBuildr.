@@ -66,7 +66,7 @@ export default function Home() {
                 onClick={isJoined ? handleLogout : handleSignIn} 
                 className='py-2 px-3 border-2 border-black rounded-lg hover:bg-black hover:text-white'
               >
-                {isJoined ? 'Joined' : 'Join us'}
+                {isJoined ? 'Joined' : 'Join our waitlist'}
               </button>
             </div>
           </div>
