@@ -99,9 +99,9 @@ export default function Home() {
           <p className='text-gray-800 text-md mt-4'>Collaborate with a global team to bring groundbreaking ideas to life and make a significant impact in your field.</p>
           <div className='flex flex-col'>
           <div className='mt-4 flex space-x-2'>
-            <div className='bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm'>HTML</div>
-            <div className='bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm'>CSS</div>
-            <div className='bg-gray-200 text-gray-700 rounded-full px-4 py-1 text-sm'>JavaScript</div>
+            <div className='bg-gray-200 text-gray-700 rounded-full flex px-2 py-2 text-xs'>HTML</div>
+            <div className='bg-gray-200 text-gray-700 rounded-full px-2 py-2 text-xs'>CSS</div>
+            <div className='bg-gray-200 text-gray-700 rounded-full px-2 py-2 text-xs'>JavaScript</div>
           </div>
           <button className='absolute bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600'>
             Join
