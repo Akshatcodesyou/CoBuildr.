@@ -89,7 +89,7 @@ export default function Home() {
   <div className='flex w-full max-w-6xl mx-auto m-10'>
     {/* Content Container */}
     <div className='flex w-full justify-center items-center'>
-      <div className='flex flex-col md:flex-row items-center space-x-5'>
+      <div className='flex flex-col-reverse md:flex-row items-center space-x-5'>
         {/* White Box on the Left */}
         <div className='w-full h-fit bg-white p-6 rounded-lg shadow-lg flex flex-col relative sm:w-96'>
           <h2 className='text-gray-900 text-4xl font-bold absolute top-5 left-5'>Project Title</h2>
@@ -128,7 +128,7 @@ export default function Home() {
         <div>
         <div className='flex justify-center items-center w-f h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5 '>
             <div className='text-center p-4 flex justify-center items-center md:text-right md:w-1/2'>
-              <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold md:w-2/3'>Collaborate and track your team's progress</h1>
+              <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold xl:w-4/5'>Collaborate and track your team's progress</h1>
             </div>
             <div className='flex justify-evenly items-center my-5 flex-col h-60'>
             <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
