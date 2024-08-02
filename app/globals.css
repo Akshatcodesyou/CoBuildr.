@@ -81,7 +81,7 @@
 /* Apply the animation to the progress bars */
 .progress-bar {
   animation: fillUp 6s forwards;
-  animation-delay: 10s; /* Add delay before animation starts */
+  animation-delay: 6s; /* Add delay before animation starts */
 }
 
 .progress-bar-container {
@@ -164,4 +164,16 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
