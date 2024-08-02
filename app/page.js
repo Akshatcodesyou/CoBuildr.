@@ -98,12 +98,12 @@ export default function Home() {
           </div>
           <p className='text-gray-800 text-md mt-4'>Collaborate with a global team to bring groundbreaking ideas to life and make a significant impact in your field.</p>
           <div className='flex flex-col'>
-          <div className='mt-4 flex space-x-2'>
-            <div className='bg-gray-200 text-gray-700 rounded-full flex px-2 py-2 text-xs'>HTML</div>
-            <div className='bg-gray-200 text-gray-700 rounded-full px-2 py-2 text-xs'>CSS</div>
-            <div className='bg-gray-200 text-gray-700 rounded-full px-2 py-2 text-xs'>JavaScript</div>
+          <div className='mt-4 flex space-x-1'>
+            <div className='bg-gray-200 text-gray-700 rounded-full flex px-1 py-1 text-xs'>HTML</div>
+            <div className='bg-gray-200 text-gray-700 rounded-full px-1 py-1 text-xs'>CSS</div>
+            <div className='bg-gray-200 text-gray-700 rounded-full px-1 py-1 text-xs'>JavaScript</div>
           </div>
-          <button className='absolute bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600'>
+          <button className='absolute bottom-5 right-5 bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600'>
             Join
           </button>
             {/* FontAwesome Icon Below the Button */}
@@ -126,37 +126,39 @@ export default function Home() {
 </div>
         </div>
         <div>
-        <div className='flex justify-center items-center w-f h-max bg-[#0D6EFD] text-white flex-col md:flex-row py-0 md:py-10 px-5 '>
-            <div className='text-center p-4 flex justify-center items-center md:text-right md:w-1/2'>
-              <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold xl:w-4/5'>Collaborate and track your team's progress</h1>
-            </div>
-            <div className='flex justify-evenly items-center my-5 flex-col h-60'>
-            <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
-              <div className='bg-red-600 h-9 w-9 rounded-full'></div>
-              <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
-                <div className='h-full progress-bar progress-bar-content red'></div>
-              </div>
-            </div>
-            <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
-            <div className='bg-blue-600 h-9 w-9 rounded-full'></div>
-            <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
-            <div className='h-full progress-bar progress-bar-content blue'></div>
-            </div>
-              </div>
-              <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
-              <div className='bg-green-600 h-9 w-9 rounded-full'></div>
-                <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
-                  <div className='h-full progress-bar progress-bar-content green'></div>
-                </div>
-              </div>
-              <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 justify-between progress-bar-container' data-filled='true'>
-              <div className='bg-violet-600 h-9 w-9 rounded-full'></div>
-                <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
-                  <div className='h-full progress-bar progress-bar-content violet'></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className='flex flex-col md:flex-row justify-center items-center w-full h-auto bg-[#0D6EFD] text-white py-10 px-5'>
+  <div className='flex justify-center items-center  text-center md:text-right'>
+    <h1 className='text-3xl text-center lg:text-5xl font-bold xl:w-4/5'>
+      Collaborate and track your team's progress
+    </h1>
+  </div>
+  <div className='flex flex-col justify-center items-center md:w-1/2 my-5'>
+    <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 mb-4 progress-bar-container' data-filled='true'>
+      <div className='bg-red-600 h-9 w-9 rounded-full'></div>
+      <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
+        <div className='h-full progress-bar progress-bar-content red'></div>
+      </div>
+    </div>
+    <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 mb-4 progress-bar-container' data-filled='true'>
+      <div className='bg-blue-600 h-9 w-9 rounded-full'></div>
+      <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
+        <div className='h-full progress-bar progress-bar-content blue'></div>
+      </div>
+    </div>
+    <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 mb-4 progress-bar-container' data-filled='true'>
+      <div className='bg-green-600 h-9 w-9 rounded-full'></div>
+      <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
+        <div className='h-full progress-bar progress-bar-content green'></div>
+      </div>
+    </div>
+    <div className='border-2 border-white rounded-full w-72 h-12 bg-white flex flex-row items-center p-1 mb-4 progress-bar-container' data-filled='true'>
+      <div className='bg-violet-600 h-9 w-9 rounded-full'></div>
+      <div className='h-2 flex-1 bg-[#f5f3fb] rounded-full mx-2'>
+        <div className='h-full progress-bar progress-bar-content violet'></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
