@@ -81,7 +81,7 @@
 /* Apply the animation to the progress bars */
 .progress-bar {
   animation: fillUp 6s forwards;
-  animation-delay: 6s; /* Add delay before animation starts */
+  animation-delay: 3s; /* Add delay before animation starts */
 }
 
 .progress-bar-container {

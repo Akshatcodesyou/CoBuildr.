@@ -1,12 +1,13 @@
 'use client';
 import { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import {Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import './globals.css';
 import { signInWithGoogle, logout } from '../firebaseConfig';
 import confetti from 'canvas-confetti';
+import './fontAwesome';
 
 export default function Home() {
   const [isJoined, setIsJoined] = useState(false);
@@ -50,7 +51,9 @@ export default function Home() {
           </div>
           <div className='flex items-center flex-col sm:flex-row'>
             <a href='#team' smooth={true} duration={500} className='mr-4'>Team</a>
-            <a href='/register' className='mr-4'>Contact</a>
+        <a className='mr-4'>
+          Contact
+        </a>
           </div>
         </div>
       </nav>
@@ -66,7 +69,7 @@ export default function Home() {
                 onClick={isJoined ? handleLogout : handleSignIn} 
                 className='py-2 px-3 border-2 border-black rounded-lg hover:bg-black hover:text-white'
               >
-                {isJoined ? 'Joined' : 'Join us'}
+                {isJoined ? 'Joined' : 'Join our waitlist'}
               </button>
             </div>
           </div>
@@ -166,34 +169,66 @@ export default function Home() {
               <h1 className='text-4xl font-bold p-1 lg:text-6xl'>Meet the team</h1>
               <div className='w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5'>
                 <div className='flex gap-6 flex-col md:flex-row'>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt='team1' className='w-max h-max rounded-full'/>
+                  <div className='border-2 border-black h-max w-40 fade-in delay-1' >
+                    <Image src='/image22.jpg' width={1000} height={1000} alt='team1' className='w-full '/>
                     <div className='p-2'>
-                      <h2 className='text-2xl font-bold text-start'>Akshat</h2>
-                      <p>CEO</p>
+                      <h2 className='text-2xl font-bold text-center'>Akshat Singh</h2>
+                      <p className='text-center'>Frontend Developer</p>
+                      <div className='flex gap-2 justify-center'>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/akshat-singh-5a2887200/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
+                      </a>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://github.com/Akshatcodesyou" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
+                      </a>
+                      </div>
                     </div>
                   </div>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-2'>
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt='team1' className='w-max h-max rounded-full'/>
+                  <div className='border-2 border-black h-max w-40 fade-in delay-1'>
+                    <Image src={'/image23.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
                     <div className='p-2'>
-                      <h2 className='text-2xl font-bold text-start'>Yashvi</h2>
-                      <p>CEO</p>
+                      <h2 className='text-2xl font-bold text-center'>Yashvi Sharma</h2>
+                      <p className='text-center'>Frontend and Database</p>
+                      <div className='flex gap-2 justify-center'>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/yashvisharma21/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
+                      </a>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://github.com/yashvisharma1204" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
+                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className='flex gap-6 flex-col md:flex-row'>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-3'>
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt='team1' className='w-max h-max rounded-full'/>
+                <div className='border-2 border-black h-max w-40 fade-in delay-1'>
+                    <Image src={'/image22.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
                     <div className='p-2'>
-                      <h2 className='text-2xl font-bold text-start'>Vikrant</h2>
-                      <p>CEO</p>
+                      <h2 className='text-2xl font-bold text-center'>Vikrant Mohan</h2>
+                      <p className='text-center'>UI & Visual Designer</p>
+                      <div className='flex gap-2 justify-center'>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/vikrant-mohan-a34a00219/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
+                      </a>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
+                      </a>
+                      </div>
                     </div>
                   </div>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-4'>
-                    <Image src={'/sampleimg.png'} width={50} height={50} alt='team1' className='w-max h-max rounded-full'/>
+                  <div className='border-2 border-black h-max w-40 fade-in delay-1'>
+                    <Image src={'/image22.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
                     <div className='p-2'>
-                      <h2 className='text-2xl font-bold text-start'>Rishi</h2>
-                      <p>CEO</p>
+                      <h2 className='text-2xl font-bold text-center'>Rishi Upadhyay</h2>
+                      <p className='text-center'>Backend Developer</p>
+                      <div className='flex gap-2 justify-center'>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/vikrant-mohan-a34a00219/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
+                      </a>
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
+                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
