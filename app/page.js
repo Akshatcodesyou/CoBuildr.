@@ -7,7 +7,7 @@ import Image from 'next/image';
 import './globals.css';
 import { signInWithGoogle, logout } from '../firebaseConfig';
 import confetti from 'canvas-confetti';
-import './fontAwesome';
+import './fontawesome';
 
 export default function Home() {
   const [isJoined, setIsJoined] = useState(false);
