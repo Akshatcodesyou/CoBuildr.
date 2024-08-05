@@ -46,7 +46,6 @@ export default function Home() {
       <nav className='border-b-4 h-fit text-center'>
         <div className='flex justify-between h-full px-10 py-5 sm:px-20'>
           <div className='flex items-center'>
-            {/* <Image src={'/applelogo.png'} alt='logo' width='50' height='50' /> */}
             <h1 className='text-2xl font-bold ml-2'><span className='text-red-600'>Co</span><span>Buildr.</span></h1>
           </div>
           <div className='flex items-center flex-col sm:flex-row'>
@@ -204,7 +203,7 @@ export default function Home() {
                 </div>
                 <div className='flex gap-6 flex-col md:flex-row'>
                 <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/image22.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
+                    <Image src={'/image25.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Vikrant Mohan</h2>
                       <p className='text-center'>UI & Visual Designer</p>
@@ -219,7 +218,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/image22.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
+                    <Image src={'/image24.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Rishi Upadhyay</h2>
                       <p className='text-center'>Backend Developer</p>
