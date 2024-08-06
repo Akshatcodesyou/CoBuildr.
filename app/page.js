@@ -223,7 +223,7 @@ export default function Home() {
                       <h2 className='text-2xl font-bold text-center'>Rishi Upadhyay</h2>
                       <p className='text-center'>Backend Developer</p>
                       <div className='flex gap-2 justify-center'>
-                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/vikrant-mohan-a34a00219/" target="_blank" rel="noopener noreferrer">
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
                       </a>
                       <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
