@@ -71,6 +71,7 @@ export default function Home() {
                 {isJoined ? 'Joined' : 'Join our waitlist'}
               </button>
             </div>
+            <div className='block text-center text-wrap mx-10 text-transparent bg-gradient-to-r from-red-400 to-red-900 bg-clip-text font-bold'>We are currently in development phase so it is recommended that you use chrome or safari for joining the waitlist.</div>
           </div>
         </div>
         {/* Thank You Box */}
@@ -223,10 +224,10 @@ export default function Home() {
                       <h2 className='text-2xl font-bold text-center'>Rishi Upadhyay</h2>
                       <p className='text-center'>Backend Developer</p>
                       <div className='flex gap-2 justify-center'>
-                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/vikrant-mohan-a34a00219/" target="_blank" rel="noopener noreferrer">
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
                       </a>
-                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://github.com/rishiupadhyaygithub" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
                       </a>
                       </div>
