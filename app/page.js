@@ -50,9 +50,9 @@ export default function Home() {
           </div>
           <div className='flex items-center flex-col sm:flex-row'>
             <a href='#team' smooth={true} duration={500} className='mr-4'>Team</a>
-        <a className='mr-4'>
+        {/* <a className='mr-4'>
           Contact
-        </a>
+        </a> */}
           </div>
         </div>
       </nav>
@@ -170,8 +170,8 @@ export default function Home() {
               <h1 className='text-4xl font-bold p-1 lg:text-6xl'>Meet the team</h1>
               <div className='w-full h-max flex justify-center px-10 gap-6 flex-col xl:flex-row content-center items-center my-5'>
                 <div className='flex gap-6 flex-col md:flex-row'>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-1' >
-                    <Image src='/image22.jpg' width={1000} height={1000} alt='team1' className='w-full '/>
+                  <div className='border-2 border-black h-max w-64 fade-in delay-1 rounded-xl' >
+                    <Image src='/image22.jpg' width={1000} height={1000} alt='team1' className='w-full rounded-t-xl'/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Akshat Singh</h2>
                       <p className='text-center'>Frontend Developer</p>
@@ -185,8 +185,8 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/image23.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
+                  <div className='border-2 border-black h-max w-64 fade-in delay-1 rounded-xl'>
+                    <Image src={'/image23.jpg'} width={1000} height={1000} alt='team1' className='w-full rounded-t-xl'/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Yashvi Sharma</h2>
                       <p className='text-center'>Frontend and Database</p>
@@ -202,23 +202,23 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='flex gap-6 flex-col md:flex-row'>
-                <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/image25.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
+                <div className='border-2 border-black h-max w-64 fade-in delay-1 rounded-xl'>
+                    <Image src={'/image25.jpg'} width={1000} height={1000} alt='team1' className='w-full rounded-t-xl'/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Vikrant Mohan</h2>
-                      <p className='text-center'>UI & Visual Designer</p>
+                      <p className='text-center'>UI & UX Designer</p>
                       <div className='flex gap-2 justify-center'>
                       <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/vikrant-mohan-a34a00219/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
                       </a>
-                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://github.com/Vikrant-Mohan-Dev" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
                       </a>
                       </div>
                     </div>
                   </div>
-                  <div className='border-2 border-black h-max w-40 fade-in delay-1'>
-                    <Image src={'/image24.jpg'} width={1000} height={1000} alt='team1' className='w-full h-full '/>
+                  <div className='border-2 border-black h-max w-64 fade-in delay-1 rounded-xl'>
+                    <Image src={'/image24.jpg'} width={1000} height={1000} alt='team1' className='w-full rounded-t-xl'/>
                     <div className='p-2'>
                       <h2 className='text-2xl font-bold text-center'>Rishi Upadhyay</h2>
                       <p className='text-center'>Backend Developer</p>
