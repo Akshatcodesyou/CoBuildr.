@@ -226,7 +226,7 @@ export default function Home() {
                       <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" color="#000000" />
                       </a>
-                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://www.linkedin.com/in/rishiupadhyay23/" target="_blank" rel="noopener noreferrer">
+                      <a className='hover:border-black border-2 border-transparent rounded-md px-1 pt-1' href="https://github.com/rishiupadhyaygithub" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="#000000" />
                       </a>
                       </div>
