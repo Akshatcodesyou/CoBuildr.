@@ -88,9 +88,9 @@ export default function Home() {
           </div>
         )}
         {/* First Section */}
-        <div className='flex flex-col md:flex-row justify-center text-center items-center w-full h-auto bg-[#c50707] text-white py-10 lg:py-20 sm:px-20 px-5'>
-  <div className='flex justify-between items-center w-full max-w-6xl mx-auto'>
-    <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold w-full'>
+        <div className='flex flex-col md:flex-row justify-between text-center items-center w-full h-auto bg-[#c50707] text-white py-10 lg:py-20 sm:px-20 px-5'>
+  <div className='flex justify-center items-center w-max max-w-6xl mx-auto'>
+    <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold w-max'>
       Create an account
     </h1>
   </div>
