@@ -1,6 +1,6 @@
 'use client';
 import { useState,useEffect } from 'react';
-/*import {Link, animateScroll as scroll } from 'react-scroll';*/
+import {Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowPointer, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
