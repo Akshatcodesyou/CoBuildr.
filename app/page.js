@@ -87,6 +87,30 @@ export default function Home() {
             </button>
           </div>
         )}
+        {/* First Section */}
+        <div className='flex flex-col md:flex-row justify-center text-center items-center w-full h-auto bg-[#c50707] text-white py-10 lg:py-20 sm:px-20 px-5'>
+  <div className='flex justify-between items-center w-full max-w-6xl mx-auto'>
+    <h1 className='text-3xl px-6 lg:text-5xl text-wrap text-center font-bold w-full'>
+      Create an account
+    </h1>
+  </div>
+  <div className='flex flex-col justify-center items-center w-full max-w-6xl mt-5 lg:mt-0'>
+    <div className="w-full h-fit bg-white p-6 rounded-lg shadow-lg grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 text-black">
+      <div className="border border-1 rounded-md p-5 flex flex-col justify-between">
+        <h1 className="text-center text-2xl font-bold text-transparent bg-gradient-to-r from-red-300 to-red-400 bg-clip-text">Beginner</h1>
+        <p className="text-wrap">Begin by making your first project solo or with someone of your level.</p>
+      </div>
+      <div className="border border-1 rounded-md p-5 flex flex-col justify-between">
+        <h1 className="text-center text-2xl font-bold text-transparent bg-gradient-to-r from-red-400 to-red-700 bg-clip-text">Intermediate</h1>
+        <p className="text-wrap">Make projects to climb up levels by expanding your knowledge and building new projects.</p>
+      </div>
+      <div className="border border-1 rounded-md p-5 flex flex-col justify-between">
+        <h1 className="text-center text-2xl font-bold text-transparent bg-gradient-to-r from-red-700 to-red-800 bg-clip-text">Pro</h1>
+        <p className="text-wrap">Amazing Captain! Continue to grow in this field by building more projects and helping devs at junior levels.</p>
+      </div>
+    </div>
+  </div>
+</div>
         <div>
           <div className='flex justify-center items-center w-full h-max bg-[#41ab4a] text-white py-0 md:py-10 px-5'>
   <div className='flex w-full max-w-6xl mx-auto m-10'>
