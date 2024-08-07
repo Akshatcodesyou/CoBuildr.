@@ -187,3 +187,11 @@ html {
     transform: scale(1);
   }
 }
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.callout-message {
+  animation: fadeInOut 2s infinite;
+}
