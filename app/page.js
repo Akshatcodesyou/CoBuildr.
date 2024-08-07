@@ -1,8 +1,8 @@
 'use client';
-import { useState } from 'react';
-import {Link, animateScroll as scroll } from 'react-scroll';
+import { useState,useEffect } from 'react';
+/*import {Link, animateScroll as scroll } from 'react-scroll';*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowPointer } from '@fortawesome/free-solid-svg-icons';
+import { faArrowPointer, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import './globals.css';
 import { signInWithGoogle, logout } from '../firebaseConfig';
@@ -13,7 +13,35 @@ export default function Home() {
   const [isJoined, setIsJoined] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
   const [visibleTeamMembers, setVisibleTeamMembers] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [showCallout, setShowCallout] = useState(true);
 
+  useEffect(() => {
+    let interval;
+    if (!showDropdown) {
+      interval = setInterval(() => {
+        setShowCallout(prev => !prev);
+      }, 4000);
+    }
+    
+    return () => clearInterval(interval);
+  }, [showDropdown]);
+
+  const notifications = [
+    "Akshat wants to join. Check his GitHub.",
+    "Yashvi wants to collaborate. Check his website.",
+    "Vikrant wants to join. Check her GitHub.",
+    "Rishi wants to collaborate. Check her portfolio."
+  ];
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+    if (showDropdown) {
+      setShowCallout(true);
+    } else {
+      setShowCallout(false);
+    }
+  };
   const handleSignIn = async () => {
     try {
       await signInWithGoogle();
@@ -152,6 +180,39 @@ export default function Home() {
   </div>
 </div>
         </div>
+          <div className='flex flex-col items-center w-full h-max bg-[#6a0dad] text-white py-0 md:py-10 px-5'>
+      <div className='flex w-full max-w-6xl mx-auto m-10 flex-col space-y-6'>
+        {/* Navbar */}
+        <div className='w-full bg-white p-6 rounded-lg shadow-lg flex justify-between items-center' style={{ minHeight: '80px' }}>
+        <h4 className='text-gray-900 text-sm md:text-xl font-bold'>Home</h4>
+          <h2 className='text-gray-900 text-xl md:text-3xl font-bold'>CoBuildr.</h2>
+          <div className='flex space-x-3 relative'>
+          <div className='relative'>
+              <FontAwesomeIcon icon={faEnvelope} className='text-l md:text-xl text-yellow-500 animate-shake cursor-pointer' onClick={toggleDropdown} />
+              <div className='absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-500 callout-message text-white rounded-full h-4 md:h-5 w-4 md:w-5 flex items-center justify-center text-xs'>
+                4
+              </div>
+              {showDropdown && (
+                <div className='absolute right-0 mt-2 w-48 h-40 bg-white text-gray-800 rounded-lg shadow-lg overflow-y-scroll'>
+                  {notifications.map((note, index) => (
+                    <div key={index} className='p-2 border-b border-gray-300 text-xs'>
+                      {note}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* Content Container */}
+        <div className='flex flex-col md:flex-row w-full justify-center items-center space-y-6 md:space-y-0 md:space-x-5'>
+          {/* Content on the Top for mobile and Left for desktop */}
+          <div className='flex-1 flex flex-col justify-center items-center text-center md:text-left p-4'>
+            <h1 className='text-3xl px-4 text-center lg:text-5xl text-wrap font-bold w-full'>Get notified and select teammates from their GitHub or portfolio</h1>
+          </div>
+          </div>
+      </div>
+    </div>
         <div>
         <div className='flex flex-col md:flex-row justify-center items-center w-full h-auto bg-[#0D6EFD] text-white py-10 px-5'>
   <div className='flex justify-center items-center  text-center md:text-right'>
